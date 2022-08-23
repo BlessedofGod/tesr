@@ -1051,6 +1051,11 @@ margin-left: 4px;
     border-radius: 7px;
 }
 
+.search{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 
 .container-1 input#search::-webkit-input-placeholder {
   color:rgba(255, 255, 255, 0.799);
@@ -1077,10 +1082,6 @@ margin-left: 4px;
   z-index: 1;
   color:rgba(255, 255, 255, 0.799);
 }
-  
-
-  
-  
   }
 
 
