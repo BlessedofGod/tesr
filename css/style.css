@@ -1057,6 +1057,7 @@ max-width: 340px;
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 198px;
+    right: 0px;
   }
 
   .section__right_btn_choice {
@@ -1087,8 +1088,8 @@ margin-left: 4px;
   .section__left_logo{
     margin: 0;
     position: relative;
-    right: 3px;
-    bottom: -254px;
+    right: -73px;
+    bottom: -245px;
   }
 
   .section__left_icons{
