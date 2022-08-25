@@ -56,8 +56,6 @@ function allChange(i) {
   houseArray[i].onmouseout = () => {
     wrapper.classList.remove('active_img');
     shadow.style.opacity = '1';
-    shadow.style.transition = '0'
-
   }
 }
 
@@ -74,3 +72,5 @@ allChange(8)
   console.log(houseArray)
 
 // надо будет создать класс и прописать условия. через ковычки ` менять цифры и т д по принципу как в моментуме. innerText
+
+

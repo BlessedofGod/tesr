@@ -16,20 +16,6 @@ prev.addEventListener('click',slickPrevSlide)
 next.addEventListener('click',slickNextSlide)
 
 
-// // Btn:hover - при наведении мыши
-
-// const circleLeft = document.getElementById('id-circle-left'),
-// circleRight = document.getElementById('id-circle-right');
-
-
-
-// function hover() {
-//   circleRight.classList.toggle('circle-right');
-//   circleLeft.classList.toggle('circle-left');
-// }
-
-// next.addEventListener('mouseenter',hover);
-
 // btn animation
 
 const circleLeft = document.getElementById('id-circle-left'),
@@ -47,3 +33,39 @@ function deleteHover() {
 
 setInterval(hover,2000)
 setInterval(deleteHover,6500)
+
+
+// changeTitle 
+const titleRight = document.querySelectorAll('.section__right_title');
+
+let index = 0
+
+const changeTitle = n => {
+  for (h1 of titleRight) {
+    h1.classList.remove('active__title');
+  }
+  titleRight[n].classList.add('active__title');
+}
+
+const nextTitle = () => {
+if (index == titleRight.length -1) {
+  index = 0;
+  changeTitle(index);
+} else {
+  index++;
+  changeTitle(index);
+}
+}
+
+const prevTitle = () => {
+  if (index == 0) {
+    index = titleRight.length -1;
+    changeTitle(index);
+  } else {
+    index--;
+    changeTitle(index);
+  }
+  }
+
+next.addEventListener('click',nextTitle)
+prev.addEventListener('click',prevTitle)
